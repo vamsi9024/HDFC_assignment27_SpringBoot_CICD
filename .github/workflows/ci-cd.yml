@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -29,10 +30,10 @@ jobs:
         run: ./gradlew test
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-ci-cd .
+        run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-ci-cd:${{ github.sha }} .
 
       - name: Log in to Docker Hub
         run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-ci-cd
+        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-ci-cd:${{ github.sha }}
