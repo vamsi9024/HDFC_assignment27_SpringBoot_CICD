@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.SpringBoot_cicd.SpringBootCicdApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-11-06T14:00:17.649Z" hostname="LT-62302" time="0.304">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.SpringBoot_cicd.SpringBootCicdApplicationTests" time="0.304"/>
+  <system-out><![CDATA[19:30:17.225 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.SpringBoot_cicd.SpringBootCicdApplicationTests]: SpringBootCicdApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:30:17.255 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.SpringBoot_cicd.SpringBootCicdApplication for test class com.example.SpringBoot_cicd.SpringBootCicdApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2025-11-06T19:30:17.366+05:30  INFO 20322 --- [SpringBoot_cicd] [    Test worker] c.e.S.SpringBootCicdApplicationTests     : Starting SpringBootCicdApplicationTests using Java 21.0.8 with PID 20322 (started by PETA.R in /Users/PETA.R/Downloads/HDFC_SpringBoot/SpringBoot_cicd)
+2025-11-06T19:30:17.367+05:30  INFO 20322 --- [SpringBoot_cicd] [    Test worker] c.e.S.SpringBootCicdApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-11-06T19:30:17.646+05:30  INFO 20322 --- [SpringBoot_cicd] [    Test worker] c.e.S.SpringBootCicdApplicationTests     : Started SpringBootCicdApplicationTests in 0.348 seconds (process running for 0.68)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/PETA.R/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
