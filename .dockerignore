@@ -1,4 +1,5 @@
 **/target
 **/build
+!build/libs
 .git
 *.md
